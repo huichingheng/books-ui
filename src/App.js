@@ -1,31 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
+import Book from "./components/Book";
+import Author from "./components/Author";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      books: [],
-      authors: []
-    };
-  }
-
-  async componentDidMount() {
-    const response = await fetch(
-      process.env.REACT_APP_BOOKS_API || "http://localhost:3000/books"
-    );
-    const data = await response.json();
-    this.setState({
-      books: data
-    });
-  }
-
   render() {
     return (
       <div>
-        {this.state.books.map(book => {
-          return <li key={book._id}>{book.title}</li>;
-        })}
+        <Book />
+        <Author />
       </div>
     );
   }
