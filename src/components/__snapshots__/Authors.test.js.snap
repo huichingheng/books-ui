@@ -7,3 +7,14 @@ exports[`renders Author component 1`] = `
   </h2>
 </div>
 `;
+
+exports[`renders name and authorlist after the component mount 1`] = `
+<div>
+  <h2>
+    Authors
+  </h2>
+  <li>
+    Harry Potter author
+  </li>
+</div>
+`;
