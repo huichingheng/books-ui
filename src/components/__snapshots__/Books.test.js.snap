@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Book component 1`] = `
+<div>
+  <h2>
+    Books
+  </h2>
+  ;
+</div>
+`;
+
+exports[`renders Book title 1`] = `
+<div>
+  <h2>
+    Books
+  </h2>
+  ;
+</div>
+`;
+
+exports[`renders title and booklist after the component mount 1`] = `
+<div>
+  <h2>
+    Books
+  </h2>
+  <li>
+    Harry Potter
+  </li>
+  <li>
+    John Wick
+  </li>
+  ;
+</div>
+`;

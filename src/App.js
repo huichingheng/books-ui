@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import Book from "./components/Book";
-import Author from "./components/Author";
+import Books from "./components/Books";
+import Authors from "./components/Authors";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Book />
-        <Author />
+        <Books />
+        <Authors />
       </div>
     );
   }

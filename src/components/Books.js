@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const API_HOST = process.env.REACT_APP_BOOKS_API || "http://localhost:3000";
 
-class Book extends Component {
+class Books extends Component {
   constructor() {
     super();
     this.state = {
@@ -13,10 +13,12 @@ class Book extends Component {
   async getBook() {
     const url = `${API_HOST}/books`;
     const response = await fetch(url);
-    const data = await response.json();
-    this.setState({
-      books: data
-    });
+    if (response.ok) {
+      const data = await response.json();
+      this.setState({
+        books: data
+      });
+    }
   }
 
   async componentDidMount() {
@@ -35,4 +37,4 @@ class Book extends Component {
   }
 }
 
-export default Book;
+export default Books;

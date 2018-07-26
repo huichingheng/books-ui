@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const API_HOST = process.env.REACT_APP_BOOKS_API || "http://localhost:3000";
 
-class Author extends Component {
+class Authors extends Component {
   constructor() {
     super();
     this.state = {
@@ -34,4 +34,4 @@ class Author extends Component {
   }
 }
 
-export default Author;
+export default Authors;
